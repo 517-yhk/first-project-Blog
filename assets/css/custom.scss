@@ -50,3 +50,18 @@ h1, h2, h3 {
 .site-footer {
   background: rgba(26, 29, 40, 0.6);
 }
+
+.site-title {
+  color: #ffffff !important;
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Inter, system-ui, sans-serif;
+}
+.site-title:hover {
+  color: #93c5fd !important;
+}
+
+.site-header {
+  padding: 1.2rem 2rem !important;
+}
