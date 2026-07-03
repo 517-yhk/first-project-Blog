@@ -87,3 +87,105 @@ h1, h2, h3 {
   color: #d1d5db !important;
   font-size: 16px;
 }
+
+code {
+  background-color: #272a33 !important;
+  color: #93c5fd !important;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre code {
+  background: transparent !important;
+  padding: 0;
+}
+pre {
+  background: #1a1d28 !important;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+/* ========== 全局正文排版优化 ========== */
+.page-content {
+  padding: 2rem 0 !important;
+}
+.wrapper {
+  max-width: 820px !important;
+  padding: 0 2rem !important;
+}
+
+/* 段落：字号、行高、段间距 */
+.page-content p {
+  color: #e5e7eb;
+  font-size: 17px;
+  line-height: 1.85;
+  margin: 1rem 0 1.2rem 0;
+}
+
+/* 一级文章大标题 */
+.post-title {
+  font-size: 44px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.5px;
+}
+
+/* 发布日期 */
+.post-meta {
+  color: #a9b2c3;
+  font-size: 16px;
+  margin-bottom: 2.5rem;
+  display: block;
+}
+
+/* 小标题（搭建过程、踩过的坑） */
+.page-content h3 {
+  color: #f9fafb;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 2.2rem 0 1rem 0;
+  border-left: 4px solid #60a5fa;
+  padding-left: 12px;
+}
+
+/* 有序列表（1.2.3.步骤） */
+.page-content ol {
+  padding-left: 2rem;
+  margin: 1rem 0 1.5rem 0;
+}
+.page-content ol li {
+  color: #e5e7eb;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 0.9rem;
+}
+
+/* 行内代码块（解决白色遮挡） */
+code {
+  background-color: #272a33 !important;
+  color: #93c5fd !important;
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* 整块代码区域 */
+pre {
+  background: #111827 !important;
+  padding: 1.2rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* 首尾总结段落，轻微区分 */
+.page-content p:first-of-type,
+.page-content p:last-of-type {
+  color: #d1d5db;
+}
