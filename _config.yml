@@ -3,6 +3,19 @@ description: 开源软件开发课程实践博客
 baseurl: "/first-project-Blog"
 url: "https://517-yhk.github.io"
 
-theme: minima
+theme: minima:
+         skin: solarized-dark
 plugins:
   - jekyll-feed
+author:
+  name: Hank
+  avatar: "/assets/images/avatar.jpg"
+  links:
+    - title: GitHub
+      url: https://github.com/517-yhk
+    - title: Email
+      url: mailto:hankun517@hotmail.com
+header_pages:
+  - index.md
+  - about.md
+  - categories.md
