@@ -5,6 +5,8 @@
   <title>{{ page.title | escape }}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
 
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
   {% for sheet in site.stylesheets %}
   <link rel="stylesheet" href="{{ sheet | relative_url }}">
   {% endfor %}
