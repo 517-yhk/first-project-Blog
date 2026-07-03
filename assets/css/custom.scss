@@ -65,3 +65,25 @@ h1, h2, h3 {
 .site-header {
   padding: 1.2rem 2rem !important;
 }
+
+.page-content p,
+.page-content li {
+  color: #e5e7eb !important;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.page-content h3,
+.page-content h4 {
+  color: #f9fafb !important;
+  margin-top: 1.5rem;
+}
+
+.page-content ul {
+  padding-left: 1.5rem;
+}
+
+.post-meta {
+  color: #d1d5db !important;
+  font-size: 16px;
+}
