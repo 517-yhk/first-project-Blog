@@ -10,7 +10,7 @@ plugins:
 
 author:
   name: Hank
-  bio: 大一大数据专业，记录编程、开源工具学习笔记，日常生活分享
+  bio: 25级本科大数据专业，记录编程、开源工具学习笔记，日常生活分享
   avatar: "/assets/images/avatar.jpg"
   links:
     - title: GitHub
@@ -23,6 +23,10 @@ header_pages:
 
 stylesheets:
   - /assets/css/custom.scss
+
+sass:
+  sass_dir: assets/css
+  style: compressed
 
 minima:
   show_sidebar: true
