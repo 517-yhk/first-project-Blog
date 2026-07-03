@@ -4,9 +4,6 @@ baseurl: "/first-project-Blog"
 url: "https://517-yhk.github.io"
 
 theme: minima
-minima:
-  skin: dark
-  show_sidebar: true
 
 plugins:
   - jekyll-feed
@@ -23,3 +20,9 @@ author:
 
 header_pages:
   - index.md
+
+stylesheets:
+  - /assets/css/custom.scss
+
+minima:
+  show_sidebar: true

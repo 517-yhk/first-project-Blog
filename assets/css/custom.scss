@@ -1,0 +1,53 @@
+---
+---
+@import "minima";
+
+$bg-main: #0f1118;        
+$bg-card: #1a1d28;        
+$text-primary: #f0f4fb;   
+$text-secondary: #a9b2c3; 
+$accent-blue: #60a5fa;    
+$border-radius: 12px;     
+$shadow: 0 4px 20px rgba(0,0,0,0.25);
+
+body {
+  background: linear-gradient(140deg, #121219, #1b1a26);
+  color: $text-primary;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.wrapper, .page-content, .post-list li, .sidebar, .site-footer {
+  background-color: $bg-card;
+  border-radius: $border-radius;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: $shadow;
+  backdrop-filter: blur(8px);
+}
+
+a {
+  color: $accent-blue;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+a:hover {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.post-meta, .footer-text {
+  color: $text-secondary;
+}
+
+.author-bio img {
+  box-shadow: 0 0 15px rgba(96, 165, 250, 0.3);
+}
+
+.site-footer {
+  background: rgba(26, 29, 40, 0.6);
+}
