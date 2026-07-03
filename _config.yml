@@ -5,17 +5,22 @@ url: "https://517-yhk.github.io"
 
 theme: minima
 minima:
-  skin: solarized-dark
+  skin: dark
+  show_sidebar: true
+
 plugins:
   - jekyll-feed
+
 author:
   name: Hank
+  bio: 大一大数据专业，记录编程、开源工具学习笔记，日常生活分享
   avatar: "/assets/images/avatar.jpg"
   links:
     - title: GitHub
       url: https://github.com/517-yhk
     - title: Email
       url: mailto:hankun517@hotmail.com
+
 header_pages:
   - index.md
   - about.md
