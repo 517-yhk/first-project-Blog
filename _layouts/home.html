@@ -43,7 +43,7 @@ layout: default
   <div class="sidebar-sticky">
     <div class="author-bio">
       {% if site.author.avatar %}
-      <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="avatar">
+      <img style="width:120px;height:120px;border-radius:50%;object-fit:cover;" src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}">
       {% endif %}
       <h3>{{ site.author.name }}</h3>
       {% if site.author.bio %}

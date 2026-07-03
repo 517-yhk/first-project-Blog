@@ -7,7 +7,6 @@ theme: minima
 minima:
   skin: dark
   show_sidebar: true
-  layout: sidebar
 
 plugins:
   - jekyll-feed
