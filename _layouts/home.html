@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<div class="home">
+  {% if page.title %}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {% endif %}
+
+  {{ content }}
+
+  {% if site.posts.size > 0 %}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {% if site.show_excerpts %}
+            {{ post.excerpt }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+
+    {% if site.rss != false %}
+    <p class="feed-subscribe">
+      <a href="{{ '/feed.xml' | relative_url }}">
+        subscribe via RSS
+      </a>
+    </p>
+    {% endif %}
+  {% endif %}
+</div>
+
+{% if site.author %}
+<aside class="sidebar">
+  <div class="sidebar-sticky">
+    <div class="author-bio">
+      {% if site.author.avatar %}
+      <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="avatar">
+      {% endif %}
+      <h3>{{ site.author.name }}</h3>
+      {% if site.author.bio %}
+      <p>{{ site.author.bio }}</p>
+      {% endif %}
+      {% if site.author.links %}
+      <ul class="social-links">
+        {% for link in site.author.links %}
+        <li>
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+</aside>
+{% endif %}
